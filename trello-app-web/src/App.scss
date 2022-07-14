@@ -9,7 +9,7 @@ $card-border-radius: 5px;
 $main-color: #0079bf;
 $appbar-bg-color: #0067a3;
 $list-bg-color: #ebecf0;
-
+$common-element-bg: rgba(255, 255, 255, 0.24);
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -41,10 +41,25 @@ body {
     .board-columns {
         display: flex;
         overflow-x: auto;
+        margin: 0 $gap $gap;
+        &::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+
+        &::-webkit-scrollbar:horizontal {
+            height: 11px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $common-element-bg;
+            border-radius: 8px;
+        }
 
         .column {
             flex: 0 0 auto;
-            margin-left: $gap;
+            &:not(:first-child) {
+                margin-left: $gap;
+            }
             width: 300px;
             height: calc(100% - #{$gap});
 
