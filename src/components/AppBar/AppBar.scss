@@ -1,0 +1,9 @@
+@import '../GlobalStyles/GlobalStyles';
+
+.navbar-app {
+    background-color: $appbar-bg-color;
+    font-size: 1.5rem;
+    padding-left: $gap;
+    display: flex;
+    align-items: center;
+}
