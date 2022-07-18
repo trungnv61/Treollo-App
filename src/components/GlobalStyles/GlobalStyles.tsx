@@ -1,7 +1,9 @@
 import React from 'react';
 import './GlobalStyles.scss';
-import { Props } from './interface';
-import './interface';
+
+interface Props {
+    children: JSX.Element;
+}
 
 const GlobalStyles: React.FC<Props> = ({ children }) => {
     return children;
