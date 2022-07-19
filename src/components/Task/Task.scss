@@ -1,0 +1,20 @@
+@import '../GlobalStyles/GlobalStyles';
+
+li.task-item {
+    background-color: white;
+    padding: $gap;
+    border-radius: $card-border-radius;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    // if last element not margin-bottom, rest have margin-bottom
+    &:not(:last-child) {
+        margin-bottom: $gap;
+    }
+
+    img {
+        display: block;
+        width: calc(100% + 2 * #{$gap});
+        margin: -$gap 0 $gap (-$gap);
+        border-top-left-radius: $column-border-radius;
+        border-top-right-radius: $column-border-radius;
+    }
+}

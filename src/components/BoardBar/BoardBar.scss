@@ -1,0 +1,9 @@
+@import '../GlobalStyles/GlobalStyles';
+
+.navbar-board {
+    background-color: $main-color;
+    font-size: 1.1rem;
+    padding-left: $gap;
+    display: flex;
+    align-items: center;
+}

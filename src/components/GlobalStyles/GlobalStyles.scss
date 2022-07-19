@@ -10,3 +10,17 @@ $main-color: #0079bf;
 $appbar-bg-color: #0067a3;
 $list-bg-color: #ebecf0;
 $common-element-bg: rgba(255, 255, 255, 0.24);
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.3em;
+    font-size: 14px;
+}
+
+.trello-app {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40px 50px 1fr;
+    background-color: $main-color;
+}
