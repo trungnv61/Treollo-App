@@ -1,8 +1,7 @@
 import React from 'react';
-import './AppBar.scss';
 
 const AppBar: React.FC = () => {
-    return <nav className="navbar-app">App Bar</nav>;
+    return <nav className="bg-blue-200 text-2xl pl-10 flex items-center">App Bar</nav>;
 };
 
 export default AppBar;
